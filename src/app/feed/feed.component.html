@@ -1,0 +1,12 @@
+<div class="feed-container" *ngIf="feeds$ | async as feeds">
+  <section class="card-wrapper">
+    <ul>
+      <li *ngFor="let feed of feeds; let i = index; trackBy: identify">
+        <app-card [cardData]="feed"></app-card>
+      </li>
+    </ul>
+  </section>
+  <section class="table-wrapper">
+    <app-table [tableData]="feeds"></app-table>
+  </section>
+</div>

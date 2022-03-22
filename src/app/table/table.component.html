@@ -1,0 +1,19 @@
+<table>
+  <caption>
+    Tabular Display
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Last Modified</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of tableData; let i = index; trackBy: identify">
+      <td data-label="Name"><p>{{ row?.name }}</p></td>
+      <td data-label="Description"><p>{{ row?.description }}</p></td>
+      <td data-label="Last Modified"><p>{{ row?.dateLastEdited }}</p></td>
+    </tr>
+  </tbody>
+</table>

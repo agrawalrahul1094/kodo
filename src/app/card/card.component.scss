@@ -1,0 +1,18 @@
+.card-container {
+    figure {
+        max-height: 220px;
+        overflow: hidden;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        position: relative;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 1rem 0.75rem;
+        color: #666666;
+      }
+}

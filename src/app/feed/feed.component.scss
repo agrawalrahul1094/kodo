@@ -1,0 +1,20 @@
+.feed-container {
+  height: 100%;
+  width: 100%;
+  /* breweries styles */
+  .card-wrapper,.table-wrapper {
+    padding: 2rem;
+    max-width: calc(960px + 2rem);
+    margin: auto;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1rem;
+      justify-content: center;
+      li {
+        border: 1px solid #e2e2e2;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
